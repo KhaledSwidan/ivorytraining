@@ -33,8 +33,10 @@ async function Services() {
       </section>
 
       <section className='relative py-[50px] section-gap h-full w-full'>
-        <div className='container mx-auto w-full text-center'>
+        <div className='container w-full text-center'>
           <FeaturedHeading subTitle='' title='مجالات التدريب والتطوير' />
+        </div>
+        <div className='container mx-auto '>
           <FieldsWork />
         </div>
       </section>
@@ -42,7 +44,7 @@ async function Services() {
       <CarouselTest />
 
       <section className='hidden min-[800px]:block relative py-[50px] section-gap h-full w-full'>
-        <div className='container mx-auto w-full text-center mb-2'>
+        <div className='container w-full text-center mb-2'>
           <FeaturedHeading
             subTitle=''
             title='تواصل مع مستشارينا فى التدريب لخدمتك'
