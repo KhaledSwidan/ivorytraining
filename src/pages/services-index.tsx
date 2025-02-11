@@ -6,7 +6,7 @@ import FieldsWork from '../components/services/FieldsWork.tsx';
 import FeaturedHeading from '../components/main-heading.tsx/index-feature.tsx';
 // import ServicesContact from './ServicesContact.tsx';
 
-async function Services() {
+function Services() {
   return (
     <main className='w-full'>
       <section
@@ -36,7 +36,7 @@ async function Services() {
         <div className='container w-full text-center'>
           <FeaturedHeading subTitle='' title='مجالات التدريب والتطوير' />
         </div>
-        <div className='container mx-auto '>
+        <div className='container mx-auto'>
           <FieldsWork />
         </div>
       </section>

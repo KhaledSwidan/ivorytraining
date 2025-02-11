@@ -31,10 +31,10 @@ const SpeakerCard: React.FC<SpeakerCardProps> = ({
         ))}
       </ul>
       <div className='mt-4 flex gap-4'>
-        <button className='bg-blue-500 text-white px-4 py-2 rounded-lg shadow hover:bg-blue-600 transition'>
+        <button className='bg-rose-950 text-white px-4 py-2 rounded-lg shadow hover:bg-rose-900 transition'>
           عرض الألبوم
         </button>
-        <button className='bg-green-500 text-white px-4 py-2 rounded-lg shadow hover:bg-green-600 transition'>
+        <button className='bg-fuchsia-950 text-white px-4 py-2 rounded-lg shadow hover:bg-fuchsia-900 transition'>
           عرض المحتوى
         </button>
       </div>
