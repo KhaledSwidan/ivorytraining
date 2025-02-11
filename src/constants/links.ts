@@ -17,6 +17,18 @@ export interface DataItemProps {
   image: string;
 }
 
+export interface SpeakerCardProps {
+  id: number;
+  image: string;
+  title: string;
+  date: string;
+  time: string;
+  language: string;
+  location: string;
+  speaker: string;
+  topics: string[];
+}
+
 export const normalLinks: Link[] = [
   { id: 1, value: 'المهارات العملية لإدارة المبيعات' },
   { id: 2, value: 'شريك محترف في إدارة الموارد البشرية' },
@@ -180,5 +192,93 @@ export const dataItems: DataItemProps[] = [
     description: 'نص قصير يشرح العنوان',
     image:
       'https://velog.velcdn.com/images/real-bird/post/806a2ae4-121d-427d-9cfc-be8fa6a618fa/image.jpg',
+  },
+];
+
+export const speakerscard: SpeakerCardProps[] = [
+  {
+    id: 1,
+    image:
+      'https://ivorytraining.com/public/ivory-general-series/img/87dvg2kq2yhfr4fitzmi5li92.png',
+    title: 'الأمسية الأولى: تصميم وتنفيذ استراتيجيات التغيير المؤسسي',
+    date: '2024-03-26',
+    time: '10:00:00 - 12:00:00 مساءً',
+    language: 'اللغة العربية',
+    location: 'مقر آيفوري بالرياض',
+    speaker:
+      'د. معتز كردي - مستشار تطوير القيادات، مرشد وميسر التدريب التجريبي',
+    topics: [
+      'إدارة التغيير بنجاح: استراتيجيات لتحويل المؤسسات.',
+      'تحفيز الموظفين وإشراكهم في رحلة التغيير.',
+      'تحقيق النجاح المستدام: تواصل الابتكار والتحسين المستمر.',
+    ],
+  },
+  {
+    id: 2,
+    image:
+      'https://ivorytraining.com/public/ivory-general-series/img/87dvg2kq2yhfr4fitzmi5li92.png',
+    title: 'الأمسية الأولى: تصميم وتنفيذ استراتيجيات التغيير المؤسسي',
+    date: '2024-03-26',
+    time: '10:00:00 - 12:00:00 مساءً',
+    language: 'اللغة العربية',
+    location: 'مقر آيفوري بالرياض',
+    speaker:
+      'د. معتز كردي - مستشار تطوير القيادات، مرشد وميسر التدريب التجريبي',
+    topics: [
+      'إدارة التغيير بنجاح: استراتيجيات لتحويل المؤسسات.',
+      'تحفيز الموظفين وإشراكهم في رحلة التغيير.',
+      'تحقيق النجاح المستدام: تواصل الابتكار والتحسين المستمر.',
+    ],
+  },
+  {
+    id: 3,
+    image:
+      'https://ivorytraining.com/public/ivory-general-series/img/87dvg2kq2yhfr4fitzmi5li92.png',
+    title: 'الأمسية الأولى: تصميم وتنفيذ استراتيجيات التغيير المؤسسي',
+    date: '2024-03-26',
+    time: '10:00:00 - 12:00:00 مساءً',
+    language: 'اللغة العربية',
+    location: 'مقر آيفوري بالرياض',
+    speaker:
+      'د. معتز كردي - مستشار تطوير القيادات، مرشد وميسر التدريب التجريبي',
+    topics: [
+      'إدارة التغيير بنجاح: استراتيجيات لتحويل المؤسسات.',
+      'تحفيز الموظفين وإشراكهم في رحلة التغيير.',
+      'تحقيق النجاح المستدام: تواصل الابتكار والتحسين المستمر.',
+    ],
+  },
+  {
+    id: 4,
+    image:
+      'https://ivorytraining.com/public/ivory-general-series/img/87dvg2kq2yhfr4fitzmi5li92.png',
+    title: 'الأمسية الأولى: تصميم وتنفيذ استراتيجيات التغيير المؤسسي',
+    date: '2024-03-26',
+    time: '10:00:00 - 12:00:00 مساءً',
+    language: 'اللغة العربية',
+    location: 'مقر آيفوري بالرياض',
+    speaker:
+      'د. معتز كردي - مستشار تطوير القيادات، مرشد وميسر التدريب التجريبي',
+    topics: [
+      'إدارة التغيير بنجاح: استراتيجيات لتحويل المؤسسات.',
+      'تحفيز الموظفين وإشراكهم في رحلة التغيير.',
+      'تحقيق النجاح المستدام: تواصل الابتكار والتحسين المستمر.',
+    ],
+  },
+  {
+    id: 5,
+    image:
+      'https://ivorytraining.com/public/ivory-general-series/img/87dvg2kq2yhfr4fitzmi5li92.png',
+    title: 'الأمسية الأولى: تصميم وتنفيذ استراتيجيات التغيير المؤسسي',
+    date: '2024-03-26',
+    time: '10:00:00 - 12:00:00 مساءً',
+    language: 'اللغة العربية',
+    location: 'مقر آيفوري بالرياض',
+    speaker:
+      'د. معتز كردي - مستشار تطوير القيادات، مرشد وميسر التدريب التجريبي',
+    topics: [
+      'إدارة التغيير بنجاح: استراتيجيات لتحويل المؤسسات.',
+      'تحفيز الموظفين وإشراكهم في رحلة التغيير.',
+      'تحقيق النجاح المستدام: تواصل الابتكار والتحسين المستمر.',
+    ],
   },
 ];
