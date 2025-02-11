@@ -18,7 +18,7 @@ export const ImageAccordion = ({ items }: ImageAccordionProps) => {
     setActive(index === active ? null : index);
 
   return (
-    <section className='bg-[#f3f4f6] flex justify-center items-center flex-wrap gap-6 cursor-pointer p-4 w-full'>
+    <section className='flex justify-center items-center flex-wrap gap-6 cursor-pointer p-4 w-full'>
       {items.map((item, index) => {
         const isActive = active === index;
         return (

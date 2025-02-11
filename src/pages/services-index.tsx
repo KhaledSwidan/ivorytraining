@@ -1,8 +1,8 @@
-import { Routes } from '../../constants/enums.ts';
-import MainHeading from '../main-heading.tsx/index.tsx';
-import { AccordionContact } from './AccordionContact.tsx';
-import CarouselTest from './Carousel.tsx';
-import FieldsWork from './FieldsWork.tsx';
+import { Routes } from '../constants/enums.ts';
+import MainHeading from '../components/main-heading.tsx/index.tsx';
+import { AccordionContact } from '../components/services/AccordionContact.tsx';
+import CarouselTest from '../components/services/Carousel.tsx';
+import FieldsWork from '../components/services/FieldsWork.tsx';
 // import ServicesContact from './ServicesContact.tsx';
 
 async function Services() {

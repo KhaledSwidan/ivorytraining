@@ -7,7 +7,7 @@ export const FieldWorkItem: React.FC<FieldWorkItemProps> = ({
   title,
   description,
 }) => (
-  <div className='flex items-center justify-between w-3/4 max-w-sm p-6 mx-auto bg-stone-300 rounded-3xl shadow-lg text-white flex-col sm:text-center'>
+  <div className='flex items-center justify-between w-3/4 max-w-sm p-6 mx-auto bg-zinc-300 rounded-3xl shadow-lg text-white flex-col sm:text-center'>
     <div className='flex justify-start items-center flex-col'>
       <img
         src={image}

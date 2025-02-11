@@ -83,7 +83,7 @@ const accordionData: AccordionItem[] = [
 ];
 
 export const AccordionContact = () => (
-  <section>
+  <section className='bg-zinc-200'>
     <ImageAccordion items={accordionData} />
   </section>
 );

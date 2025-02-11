@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
-import Socialmedia from './Socialmedia';
-import { importantLinks, normalLinks } from '../../constants/links';
+import Socialmedia from '../components/footer/Socialmedia';
+import { importantLinks, normalLinks } from '../constants/links';
 
 const Footer = () => {
   return (

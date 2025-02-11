@@ -1,4 +1,4 @@
-import { StrictMode } from 'react';
+import { StrictMode, Suspense } from 'react';
 import { createRoot } from 'react-dom/client';
 import { HashRouter as Router } from 'react-router-dom';
 import './index.css';
@@ -12,7 +12,15 @@ if (!rootElement) {
 createRoot(rootElement).render(
   <StrictMode>
     <Router>
-      <App />
+      <Suspense
+        fallback={
+          <div className='flex justify-center items-center h-screen text-xl'>
+            Loading...
+          </div>
+        }
+      >
+        <App />
+      </Suspense>
     </Router>
   </StrictMode>
 );
