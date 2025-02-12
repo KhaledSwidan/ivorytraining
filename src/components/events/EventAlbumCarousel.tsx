@@ -2,13 +2,10 @@ import { useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { EffectCoverflow } from 'swiper/modules';
 import type { Swiper as SwiperInstance } from 'swiper';
+import image from '../../assets/OIP.jpg';
 import 'swiper/swiper-bundle.css';
 
-const slides = [
-  'https://th.bing.com/th/id/OIP.HxV79tFMPfBAIo0BBF-sOgHaEy?rs=1&pid=ImgDetMain',
-  'https://th.bing.com/th/id/R.18f14463a91f8316ec8daea09ab5baaf?rik=1ONxPv6onaga7A&pid=ImgRaw&r=0',
-  'https://th.bing.com/th/id/R.ee318f01abac5b231578d8c21e6022e5?rik=a47%2fnRp%2foxXe2g&riu=http%3a%2f%2fwebfacil.tinet.org%2fusuaris%2fdavidgil%2fAMANECER_20090122135158.jpg&ehk=8adyw%2bATTghfQd3VNxdTkvZAyHPgNgcUUr1LbDuG%2fJQ%3d&risl=&pid=ImgRaw&r=0',
-];
+const slides = [image, image, image];
 
 const EventAlbumCarousel: React.FC = () => {
   const [swiperInstance, setSwiperInstance] = useState<SwiperInstance | null>(
