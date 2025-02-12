@@ -1,4 +1,4 @@
-import SpeakerCard from '../components/events/Cards.tsx';
+import SpeakerCard from '../components/events/SpeakerCard.tsx';
 import MainHeading from '../components/main-heading.tsx';
 import FeaturedHeading from '../components/main-heading.tsx/index-feature.tsx';
 import { Routes } from '../constants/enums';

@@ -1,4 +1,6 @@
 import { SpeakerCardProps } from '../../constants/links';
+import EventAlbum from './EventAlbum';
+import EventContent from './EventContent';
 
 const SpeakerCard: React.FC<SpeakerCardProps> = ({
   image,
@@ -31,12 +33,16 @@ const SpeakerCard: React.FC<SpeakerCardProps> = ({
         ))}
       </ul>
       <div className='mt-4 flex gap-4'>
-        <button className='bg-rose-950 text-white px-4 py-2 rounded-lg shadow hover:bg-rose-900 transition'>
-          عرض الألبوم
-        </button>
-        <button className='bg-fuchsia-950 text-white px-4 py-2 rounded-lg shadow hover:bg-fuchsia-900 transition'>
-          عرض المحتوى
-        </button>
+        <EventAlbum
+          title='عرض الألبوم'
+          modalTitle='عنوان الأمسية'
+          description='Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus officia excepturi amet aspernatur enim.'
+        />
+        <EventContent
+          title='عنوان المحتوى'
+          modalTitle='عنوان النافذة'
+          description='Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus officia excepturi amet aspernatur enim.Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus officia excepturi amet aspernatur enim.'
+        />
       </div>
     </div>
   );

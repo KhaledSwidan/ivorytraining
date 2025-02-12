@@ -29,6 +29,11 @@ export const ImageAccordion = ({ items }: ImageAccordionProps) => {
             }`}
             onClick={() => handleToggle(index)}
           >
+            {/* <div
+              className="absolute inset-0 flex justify-center items-center 
+     before:content-['تجريبي\0020نص'] before:text-lg before:font-medium 
+     before:text-zinc-900 before:rotate-90 before:absolute before:z-50"
+            /> */}
             <img
               src={item.image}
               alt={item.title}
