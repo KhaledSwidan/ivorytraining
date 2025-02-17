@@ -1,4 +1,10 @@
 @import 'tailwindcss';
 main {
-  margin-top: 110px;
+  margin-top: 50px;
+}
+
+@media (min-width: 1024px) {
+  main {
+    margin-top: 110px;
+  }
 }

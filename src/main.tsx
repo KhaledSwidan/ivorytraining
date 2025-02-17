@@ -15,7 +15,7 @@ createRoot(rootElement).render(
       <Suspense
         fallback={
           <div className='flex justify-center items-center h-screen text-xl'>
-            Loading...
+            جارى تحميل الصفحة...
           </div>
         }
       >

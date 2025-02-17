@@ -15,14 +15,14 @@ const LanguageSwitcher = () => {
     <div className='flex'>
       {locale === 'ar' ? (
         <button
-          className='border border-gray-300 bg-white text-gray-700 px-4 py-2 rounded-md shadow-sm hover:bg-gray-100 transition'
+          className='border border-gray-300 bg-white text-gray-700 px-4 py-2 rounded-md shadow-sm hover:bg-gray-100 transition cursor-pointer'
           onClick={() => switchLanguage('en')}
         >
           English
         </button>
       ) : (
         <button
-          className='border border-gray-300 bg-white text-gray-700 px-4 py-2 rounded-md shadow-sm hover:bg-gray-100 transition'
+          className='border border-gray-300 bg-white text-gray-700 px-4 py-2 rounded-md shadow-sm hover:bg-gray-100 transition cursor-pointer'
           onClick={() => switchLanguage('ar')}
         >
           العربية
