@@ -3,6 +3,7 @@ import { Link, useLocation } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
 import LanguageSwitcher from './language-switcher';
 import { Routes, UserRole } from '../../constants/enums';
+import { Translations } from '../../constants/links';
 
 interface NavbarProps {
   translations: Translations;
