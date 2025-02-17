@@ -3,6 +3,21 @@ export interface Link {
   value: string;
 }
 
+export interface Translations {
+  navbar: {
+    home: string;
+    services: string;
+    courses: string;
+    plans: string;
+    credits: string;
+    events: string;
+    podcast: string;
+    contactUs: string;
+    profile: string;
+    admin: string;
+  };
+}
+
 export interface FieldWorkItemProps {
   id: number;
   title: string;

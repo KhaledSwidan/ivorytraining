@@ -1,1 +1,4 @@
-@import "tailwindcss";
+@import 'tailwindcss';
+main {
+  margin-top: 110px;
+}
