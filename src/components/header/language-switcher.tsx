@@ -1,32 +1,31 @@
 import { useLocation, useNavigate } from 'react-router-dom';
+import { ArBtn, EngBtn } from '../../ui/buttons';
+import { useMemo } from 'react';
 
 const LanguageSwitcher = () => {
   const location = useLocation();
   const navigate = useNavigate();
 
-  const locale = location.pathname.split('/')[1]; // `/ar/home`
+  const locale = useMemo(
+    () => location.pathname.split('/')[1] || 'en',
+    [location.pathname]
+  );
 
-  const switchLanguage = (newLocale: string) => {
-    const newPath = location.pathname.replace(`/${locale}`, `/${newLocale}`);
-    navigate(newPath);
+  const switchLanguage = (newLocale: 'en' | 'ar') => {
+    if (newLocale === locale) return; // منع إعادة التوجيه إذا كانت اللغة نفسها
+
+    const newPath = `/${newLocale}${location.pathname.substring(
+      locale.length + 1
+    )}`;
+    navigate(newPath, { replace: true });
   };
 
   return (
     <div className='flex'>
       {locale === 'ar' ? (
-        <button
-          className='border border-gray-300 bg-white text-gray-700 px-4 py-2 rounded-md shadow-sm hover:bg-gray-100 transition cursor-pointer'
-          onClick={() => switchLanguage('en')}
-        >
-          English
-        </button>
+        <EngBtn switchLanguage={switchLanguage} />
       ) : (
-        <button
-          className='border border-gray-300 bg-white text-gray-700 px-4 py-2 rounded-md shadow-sm hover:bg-gray-100 transition cursor-pointer'
-          onClick={() => switchLanguage('ar')}
-        >
-          العربية
-        </button>
+        <ArBtn switchLanguage={switchLanguage} />
       )}
     </div>
   );
